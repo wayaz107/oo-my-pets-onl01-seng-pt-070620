@@ -48,14 +48,6 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
 
-  def play_with_cats
-    self.cats.each do |cat|
-      cat.mood = "happy"
-    end
-  end
-
-
-
     def sell_pets
       self.cats.each do |cat|
         self.cats.delete(cat)
