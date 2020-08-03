@@ -1,3 +1,4 @@
+require "pry"
 class Dog
   # code goes heredef initialize(name)
 attr_accessor :owner, :mood
@@ -10,6 +11,7 @@ def initialize(name, owner)
     @owner = owner
     @mood = "nervous"
     @@all << self
+    binding.pry
     owner.dogs << self
   end
 
